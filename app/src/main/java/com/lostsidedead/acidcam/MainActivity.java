@@ -68,10 +68,11 @@ import android.media.MediaRecorder;
 import android.view.Surface;
 import android.graphics.Canvas;
 import android.media.CamcorderProfile;
+import android.Manifest;
+import android.content.pm.PackageManager;
 
 public class MainActivity extends CameraActivity implements CvCameraViewListener2, OnTouchListener, PopupMenu.OnMenuItemClickListener {
     private static final String TAG = "OCVSample::Activity";
-
     private CameraBridgeViewBase mOpenCvCameraView;
     private boolean mIsJavaCamera = true;
     private MenuItem mItemSwitchCamera = null;
@@ -153,14 +154,14 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         return param.getSupportedVideoSizes();
     }
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, "called onCreate");
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         if (savedInstanceState != null) {
-            camera_index = savedInstanceState.getInt(STATE_CAMERA_INDEX, 0);
+            camera_index = savedInstanceState.getInt(STATE_CAMERA_INDEX,  1);
             flip_state = savedInstanceState.getInt(STATE_FLIP, 0);
             front_size_index = savedInstanceState.getInt(FRONT_SIZE_INDEX, 0);
             back_size_index = savedInstanceState.getInt(BACK_SIZE_INDEX, 0);
@@ -176,6 +177,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         }
         image_back_sizes = getListOfSizes(0);
         image_front_sizes = getListOfSizes(1);
+        if(num_cameras <= 1) camera_index = 0;
         //int max_size = 0;
         android.hardware.Camera.Size size = image_back_sizes.get(back_size_index);
         if (camera_index == 1) {
