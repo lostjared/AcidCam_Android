@@ -8,7 +8,11 @@ Also you will need to add the program to the list of exepted apps from Battery s
 in the exempted apps. Otherwise the Battery saver will kill the program if it thinks it is
 using to much battery power.
 
-This is is still in early development so it is not great yet.
+Also it only works in Landscape mode, you may have to use the Flip X, FLip Y, or Flip X and Y
+on your tablet because they are all different.
+
+Most of these issues will hopefully be worked through as
+this is is still in early development so it is not perfect or 100% yet.
 
 You can find the C++ code for the Acid Cam filters here: https://github.com/lostjared/libacidcam
 
