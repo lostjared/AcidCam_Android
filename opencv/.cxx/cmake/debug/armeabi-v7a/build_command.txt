@@ -1,0 +1,15 @@
+Executable : /Users/jared/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/libcxx_helper
+-B/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-16
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/build/intermediates/cmake/debug/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/jared/Library/Android/sdk/ndk/21.0.6113669
+-DCMAKE_TOOLCHAIN_FILE=/Users/jared/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/jared/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+-DANDROID_STL=c++_shared
+jvmArgs : 
+

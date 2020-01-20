@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam",
+      "sdkFolder": "/Users/jared/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "ideBuildTargetAbi": "armeabi-v7a,armeabi",
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/build/intermediates",
+      "gradleModulePathName": ":opencv",
+      "moduleRootFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv",
+      "makeFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/libcxx_helper/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/.cxx",
+      "cxxFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx",
+      "ndkFolder": "/Users/jared/Library/Android/sdk/ndk/21.0.6113669",
+      "ndkVersion": "21.0.6113669",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_STL\u003dc++_shared"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/build/intermediates/cmake/debug/lib",
+    "objFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/build/intermediates/cmake/debug/obj",
+    "jsonFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug",
+    "gradleBuildOutputFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": [
+      "opencv_jni_shared"
+    ]
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 16,
+  "cxxBuildFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a",
+  "jsonFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a",
+  "objFolder": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/build/intermediates/cmake/debug/obj/armeabi-v7a",
+  "buildCommandFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a/build_command.txt",
+  "buildOutputFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a/build_output.txt",
+  "modelOutputFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/build_generation_state.json",
+    "cacheKeyFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cxx/debug/armeabi-v7a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/opencv/.cxx/cmake/debug/armeabi-v7a/compile_commands.json"
+}

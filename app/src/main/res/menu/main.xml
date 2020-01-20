@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lostsidedead.acidcam.MainActivity" >
+
+     <item
+          android:id="@+id/moveleft"
+          android:enabled="true"
+          android:title="Move Left"
+          android:visible="true" />
+      <item
+          android:id="@+id/moveright"
+          android:enabled="true"
+          android:title="Move Right"
+          android:visible="true" />
+
+   <item
+       android:id="@+id/rewind_left"
+       android:enabled="true"
+       android:title="Rewind to Start"
+       android:visible="true" />
+   <item
+       android:id="@+id/fastforward"
+       android:enabled="true"
+       android:title="Fast Forward to End"
+       android:visible="true" />
+   <item
+       android:id="@+id/takesnapshot"
+       android:enabled="true"
+       android:title="Take snapshot (Delay)"
+       android:visible="true" />
+   <item
+       android:id="@+id/takesnapshot_now"
+       android:enabled="true"
+       android:title="Take snapshot (Now)"
+       android:visible="true" />
+    <item
+       android:id="@+id/flipi"
+       android:enabled="true"
+       android:title="Flip Image X"
+       android:visible="true" />
+   <item
+       android:id="@+id/flipy"
+       android:enabled="true"
+       android:title="Flip Image Y"
+       android:visible="true" />
+
+   <item
+       android:id="@+id/flipz"
+       android:enabled="true"
+       android:title="Flip Image X and Y"
+       android:visible="true" />
+   <item
+       android:id="@+id/switchcam"
+       android:enabled="true"
+       android:title="Switch Camera"
+       android:visible="true" />
+</menu>

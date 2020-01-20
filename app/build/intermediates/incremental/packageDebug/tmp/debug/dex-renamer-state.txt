@@ -1,0 +1,4 @@
+#Mon Jan 20 01:18:16 PST 2020
+base.0=/Users/jared/Source/newestac2/android/OpenCV-android-sdk/samples/AcidCam/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
