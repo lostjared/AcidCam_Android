@@ -2,7 +2,8 @@
 
 NOTE: YOU WILL HAVE TO GIVE THE APP PERMISSIONS, OR IT WILL NOT WORK
 You need to go into the settings and give the app READ/WRITE and Camera Permissions
-Otherwise, the PROGRAM WILL NOT WORK (It will just close)
+Otherwise, the PROGRAM WILL NOT WORK (It will just close.)
+You will need to do this is the Settings app and setting that the program has permission to access Read/Write and Camera permissions by switching them on.
 
 Also, you will need to add the program to the list of exempted apps from the Battery saver
 in the exempted apps. Otherwise, the battery saver app will kill the program if it thinks it is
