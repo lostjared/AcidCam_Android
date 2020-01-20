@@ -10,5 +10,7 @@ using to much battery power.
 
 This is is still in early development so it is not great yet.
 
+You can find the C++ code for the Acid Cam filters here: https://github.com/lostjared/libacidcam
+
 - Jared Bruni
 
