@@ -59,6 +59,8 @@ import android.provider.MediaStore.*;
 import android.provider.*;
 import android.content.Context;
 import android.hardware.Camera;
+import static org.opencv.imgproc.Imgproc.*;
+import static org.opencv.imgcodecs.Imgcodecs.imread;
 
 import java.util.Random;
 import java.util.List;
@@ -494,8 +496,12 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         Boolean bool = null;
         filename = file.toString();
         mp.start();
+        Mat resizeImage = new Mat();
+        org.opencv.core.Size scaleSize = new org.opencv.core.Size(mat.width()*2, mat.height()*2);
+        Imgproc.resize(mat, resizeImage, scaleSize , 0, 0, Imgproc.INTER_CUBIC);
         Mat cmat = new Mat();
-        Imgproc.cvtColor(mat, cmat, Imgproc.COLOR_RGBA2BGR, 3);
+        Imgproc.cvtColor(resizeImage, cmat, Imgproc.COLOR_RGBA2BGR, 3);
+        Log.d("AC2", "Resized Image: " + resizeImage.width() + "x" + resizeImage.height());
         bool = Imgcodecs.imwrite(filename, cmat);
         if (bool == true)
             Log.d("com.lostsidedead.AcidCam", "SUCCESS writing " + filename + " image to external storage");
@@ -504,6 +510,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         //MediaScannerConnection.scanFile(this, new String[] { file.getPath() }, new String[] { "image/jpeg" }, null);
         addImageToGallery(filename, getApplicationContext());
         cmat.release();
+        resizeImage.release();
     }
 
     public static void addImageToGallery(final String filePath, final Context context) {
