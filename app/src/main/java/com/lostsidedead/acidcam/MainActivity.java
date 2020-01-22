@@ -58,6 +58,7 @@ import android.content.ContentValues;
 import android.provider.MediaStore.*;
 import android.provider.*;
 import android.content.Context;
+import android.hardware.Camera;
 
 import java.util.Random;
 import java.util.List;
@@ -151,7 +152,14 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         camera = camera.open(camera_index);
         Parameters param = camera.getParameters();
         camera.release();
-        return param.getSupportedVideoSizes();
+        List<android.hardware.Camera.Size> sz = param.getSupportedVideoSizes();
+               List<android.hardware.Camera.Size> rt = new java.util.ArrayList<android.hardware.Camera.Size>();
+        for(int i = 0; i < sz.size(); ++i) {
+            android.hardware.Camera.Size v = sz.get(i);
+            if(v.width <= 1280 && v.height <= 720)
+                rt.add(v);
+        }
+        return rt;
     }
 
     @Override
