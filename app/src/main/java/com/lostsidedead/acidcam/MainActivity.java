@@ -393,6 +393,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         Mat mat = inputFrame.rgba();
         if(filter_changed == true) {
             filter_changed = false;
+            filter.clear_frames();
         }
         filter.Filter(current_set_filter, mat.getNativeObjAddr());
         Core.flip(mat, mat, flip_state);
