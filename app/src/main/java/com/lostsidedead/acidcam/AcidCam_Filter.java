@@ -1064,8 +1064,6 @@ public class AcidCam_Filter {
 		item.add(new FilterItem("IncreaseLowRedLevel", 1965));
 		item.add(new FilterItem("IncreaseLowGreenLevel", 1966));
 		item.add(new FilterItem("IncreaseLowBlueLevel", 1967));
-		item.add(new FilterItem("Zoom", 1968));
-		item.add(new FilterItem("ZoomCorner", 1971));
 		item.add(new FilterItem("MedianBlendByLowValue", 1973));
 		item.add(new FilterItem("MedianBlendByIncreasingValue", 1974));
 		return item;
@@ -2089,8 +2087,6 @@ public class AcidCam_Filter {
 			sorted_items.add(new FilterItem("XorSquare", 636));
 			sorted_items.add(new FilterItem("XorTrails", 227));
 			sorted_items.add(new FilterItem("XorWithSource", 534));
-			sorted_items.add(new FilterItem("Zoom", 1968));
-			sorted_items.add(new FilterItem("ZoomCorner", 1971));
 			sorted_items.add(new FilterItem("resizeFrameHeight", 1057));
 			sorted_items.add(new FilterItem("resizeFrameWidth", 1056));
 			sorted_items.add(new FilterItem("resizeFrameWidthAndHeight", 1058));
