@@ -73,8 +73,6 @@ public class AcidCam_Filter {
 		item.add(new FilterItem("Pixel Scale", 25));
 		item.add(new FilterItem("PixelSort", 26));
 		item.add(new FilterItem("GlitchSort", 27));
-		item.add(new FilterItem("GaussianBlur", 34));
-		item.add(new FilterItem("Median Blur", 35));
 		item.add(new FilterItem("Blur Distortion", 36));
 		item.add(new FilterItem("Diamond Pattern", 37));
 		item.add(new FilterItem("MirrorBlend", 38));
@@ -95,9 +93,6 @@ public class AcidCam_Filter {
 		item.add(new FilterItem("Mirror Average Mix", 53));
 		item.add(new FilterItem("Mean", 54));
 		item.add(new FilterItem("Laplacian", 55));
-		item.add(new FilterItem("Bitwise_XOR", 56));
-		item.add(new FilterItem("Bitwise_AND", 57));
-		item.add(new FilterItem("Bitwise_OR", 58));
 		item.add(new FilterItem("Equalize", 59));
 		item.add(new FilterItem("Channel Sort", 60));
 		item.add(new FilterItem("Reverse_XOR", 61));
@@ -1134,13 +1129,10 @@ public class AcidCam_Filter {
 			sorted_items.add(new FilterItem("BitwiseColorMatrix", 430));
 			sorted_items.add(new FilterItem("BitwiseXorScale", 226));
 			sorted_items.add(new FilterItem("BitwiseXorStrobe", 234));
-			sorted_items.add(new FilterItem("Bitwise_AND", 57));
 			sorted_items.add(new FilterItem("Bitwise_AND_Blend", 429));
-			sorted_items.add(new FilterItem("Bitwise_OR", 58));
 			sorted_items.add(new FilterItem("Bitwise_OR_Blend", 428));
 			sorted_items.add(new FilterItem("Bitwise_Rotate", 78));
 			sorted_items.add(new FilterItem("Bitwise_Rotate Diff", 79));
-			sorted_items.add(new FilterItem("Bitwise_XOR", 56));
 			sorted_items.add(new FilterItem("Bitwise_XOR_Average", 240));
 			sorted_items.add(new FilterItem("Bitwise_XOR_Blend", 426));
 			sorted_items.add(new FilterItem("Bitwise_XOR_BlendFrame", 747));
@@ -1421,7 +1413,6 @@ public class AcidCam_Filter {
 			sorted_items.add(new FilterItem("GammaIncDecIncrease", 574));
 			sorted_items.add(new FilterItem("GaussianBlend", 254));
 			sorted_items.add(new FilterItem("GaussianBlendEx", 750));
-			sorted_items.add(new FilterItem("GaussianBlur", 34));
 			sorted_items.add(new FilterItem("GaussianBlurInc", 761));
 			sorted_items.add(new FilterItem("GaussianBlurMild", 1648));
 			sorted_items.add(new FilterItem("GaussianStrobe", 423));
@@ -1572,7 +1563,6 @@ public class AcidCam_Filter {
 			sorted_items.add(new FilterItem("MatrixXorAnd", 309));
 			sorted_items.add(new FilterItem("MaxRGB", 857));
 			sorted_items.add(new FilterItem("Mean", 54));
-			sorted_items.add(new FilterItem("Median Blur", 35));
 			sorted_items.add(new FilterItem("MedianBlend", 213));
 			sorted_items.add(new FilterItem("MedianBlendAnimation", 278));
 			sorted_items.add(new FilterItem("MedianBlendByIncreasingValue", 1974));
