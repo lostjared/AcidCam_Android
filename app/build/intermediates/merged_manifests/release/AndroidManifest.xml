@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="23"
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.CAMERA" />
@@ -29,11 +29,18 @@
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/ic_launcher"
+        android:label="Acid Cam Android"
         android:supportsRtl="true" >
-        <activity android:name="com.lostsidedead.acidcam.MainActivity" >
+        <activity
+            android:name="com.lostsidedead.acidcam.MainActivity"
+            android:label="Acid Cam Android"
+            android:parentActivityName="com.lostsidedead.acidcam.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lostsidedead.acidcam.SessionStart" />
+        </activity>
+        <activity android:name="com.lostsidedead.acidcam.SessionStart" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
