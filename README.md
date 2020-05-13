@@ -1,6 +1,8 @@
 # AcidCam Android
 
 
+Going to work on this project again and see if I can make some progress.
+
 Now asks for permission to use the Camera / File System.
 
 Also, you will need to add the program to the list of exempted apps from the Battery saver
