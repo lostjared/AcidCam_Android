@@ -155,7 +155,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         Parameters param = camera.getParameters();
         camera.release();
         List<android.hardware.Camera.Size> sz = param.getSupportedVideoSizes();
-               List<android.hardware.Camera.Size> rt = new java.util.ArrayList<android.hardware.Camera.Size>();
+        List<android.hardware.Camera.Size> rt = new java.util.ArrayList<android.hardware.Camera.Size>();
         for(int i = 0; i < sz.size(); ++i) {
             android.hardware.Camera.Size v = sz.get(i);
             if(v.width <= 1280 && v.height <= 720)
@@ -313,8 +313,8 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         }
 
         if (item.getGroupId() == MENU_FILTER_MAP) {
-           filter_index = item.getItemId();
-           current_set_filter = filter.getFilterIndex(filter_index);
+            filter_index = item.getItemId();
+            current_set_filter = filter.getFilterIndex(filter_index);
             Toast.makeText(this, "Filter changed to:  " + filter.getFilterName(filter_index), Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -327,7 +327,7 @@ public class MainActivity extends CameraActivity implements CvCameraViewListener
         }
 
         switch (item.getItemId()) {
-              case R.id.takesnapshot:
+            case R.id.takesnapshot:
                 showImageSaved();
                 break;
             case R.id.takesnapshot_now:
